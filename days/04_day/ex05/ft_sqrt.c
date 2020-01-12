@@ -1,38 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/11 17:12:50 by eshilov           #+#    #+#             */
-/*   Updated: 2020/01/11 19:39:02 by eshilov          ###   ########.fr       */
+/*   Created: 2020/01/11 22:27:08 by eshilov           #+#    #+#             */
+/*   Updated: 2020/01/11 23:08:46 by eshilov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int		ft_iteractive_factorial(int nb)
+int		ft_sqrt(int nb)
 {
-	int i;
-	int res;
+	int sqrt;
 
-	i = 1;
-	res = 1;
-	if ((nb <= 0) || (nb >= 12))
-	{
+	sqrt = 1;
+	if ((nb > 46340 * 46340) || (nb <= 0))
 		return (0);
-	}
-	if (nb == 1)
-	{
-		return (1);
-	}
-	while (i <= nb)
-	{
-		res = res * i;
-		i++;
-	}
-	return (res);
+	while (sqrt * sqrt < nb)
+		++sqrt;
+	if (sqrt * sqrt == nb)
+		return (sqrt);
+	return (0);
 }
 
 int		main(void)
@@ -40,6 +31,6 @@ int		main(void)
 	int nb;
 
 	scanf("%d", &nb);
-	printf("The Factorial of %d is %d", nb, ft_iteractive_factorial(nb));
+	printf("%d", ft_sqrt(nb));
 	return (0);
 }

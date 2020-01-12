@@ -1,45 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/11 17:12:50 by eshilov           #+#    #+#             */
-/*   Updated: 2020/01/11 19:39:02 by eshilov          ###   ########.fr       */
+/*   Created: 2020/01/09 19:44:48 by eshilov           #+#    #+#             */
+/*   Updated: 2020/01/09 20:47:08 by eshilov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-int		ft_iteractive_factorial(int nb)
+void	ft_putchar(char c)
 {
-	int i;
-	int res;
+	write(1, &c, 1);
+}
 
-	i = 1;
-	res = 1;
-	if ((nb <= 0) || (nb >= 12))
+void	ft_print_comb2(void)
+{
+	int arr[2];
+
+	arr[0] = -1;
+	while (++arr[0] <= 98)
 	{
-		return (0);
+		arr[1] = arr[0];
+		while (++arr[1] <= 99)
+		{
+			ft_putchar((arr[0] / 10) + '0');
+			ft_putchar((arr[0] % 10) + '0');
+			ft_putchar(' ');
+			ft_putchar((arr[1] / 10) + '0');
+			ft_putchar((arr[1] % 10) + '0');
+			if (arr[0] != 98)
+			{
+				ft_putchar(',');
+				ft_putchar(' ');
+			}
+		}
 	}
-	if (nb == 1)
-	{
-		return (1);
-	}
-	while (i <= nb)
-	{
-		res = res * i;
-		i++;
-	}
-	return (res);
 }
 
 int		main(void)
 {
-	int nb;
-
-	scanf("%d", &nb);
-	printf("The Factorial of %d is %d", nb, ft_iteractive_factorial(nb));
+	ft_print_comb2();
 	return (0);
 }

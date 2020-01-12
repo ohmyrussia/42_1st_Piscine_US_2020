@@ -1,45 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/11 17:12:50 by eshilov           #+#    #+#             */
-/*   Updated: 2020/01/11 19:39:02 by eshilov          ###   ########.fr       */
+/*   Created: 2020/01/11 20:03:22 by eshilov           #+#    #+#             */
+/*   Updated: 2020/01/11 21:56:44 by eshilov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include <stdio.h>
 
-int		ft_iteractive_factorial(int nb)
+int		ft_interative_power(int nb, int power)
 {
 	int i;
-	int res;
+	int nbp;
 
 	i = 1;
-	res = 1;
-	if ((nb <= 0) || (nb >= 12))
-	{
+	nbp = nb;
+	if (power < 0)
 		return (0);
-	}
-	if (nb == 1)
-	{
+	if (power == 0)
 		return (1);
-	}
-	while (i <= nb)
+	while (i < power)
 	{
-		res = res * i;
+		nb = nb * nbp;
 		i++;
 	}
-	return (res);
+	return (nb);
 }
 
 int		main(void)
 {
+	int num;
+	int power;
 	int nb;
 
-	scanf("%d", &nb);
-	printf("The Factorial of %d is %d", nb, ft_iteractive_factorial(nb));
+	scanf("%d %d", &num, &power);
+	nb = ft_interative_power(num, power);
+	printf("%d", nb);
 	return (0);
 }

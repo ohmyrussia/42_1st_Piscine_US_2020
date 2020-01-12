@@ -1,0 +1,975 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+  1 #include <unistd.h>\
+Last login: Wed Jan  8 09:49:09 on ttys002\
+e1z1r2p42% ls\
+Desktop		Downloads	dead.letter	goinfre\
+Documents	Library		eshilov\
+e1z1r2p42% cd eshilov\
+e1z1r2p42% ls\
+day00			day01			files.txt\
+day00.zip		day02			policy\
+day00_archieve.tar	files-recursive.txt	testtest5\
+e1z1r2p42% cd day02\
+e1z1r2p42% ls\
+#jour02.c#	day02tests\
+e1z1r2p42% cd day02tests\
+e1z1r2p42% ls\
+jour02		jour02.c\
+e1z1r2p42% lc\
+  1 #include <unistd.h>\
+zsh: command not found: lc\
+e1z1r2p42% ls\
+jour02		jour02.c\
+e1z1r2p42% ./jour02\
+@\
+e1z1r2p42% vim jour02.c\
+e1z1r2p42% gcc -o jour jour.c\
+clang: error: no such file or directory: 'jour.c'\
+clang: error: no input files\
+e1z1r2p42% ls\
+jour02		jour02.c\
+e1z1r2p42% gcc -o jour02 jour02.c\
+jour02.c:14:2: warning: implicit declaration of function 'wgile' is invalid in\
+      C99 [-Wimplicit-function-declaration]\
+        wgile (i < n)\
+        ^\
+jour02.c:14:15: error: expected ';' after expression\
+        wgile (i < n)\
+  1 #include <unistd.h>\
+                     ^\
+                     ;\
+jour02.c:24:14: warning: multi-character character constant [-Wmultichar]\
+        ft_putchar ('@, 42');\
+                    ^\
+jour02.c:24:14: warning: character constant too long for its type\
+jour02.c:24:14: warning: implicit conversion from 'int' to 'char' changes value\
+      from 740308018 to 50 [-Wconstant-conversion]\
+        ft_putchar ('@, 42');\
+        ~~~~~~~~~~  ^~~~~~~\
+  1 #include <unistd.h>\
+4 warnings and 1 error generated.\
+e1z1r2p42% vim jour02.c\
+e1z1r2p42% gcc -o jour02 jour02.c\
+jour02.c:14:2: warning: implicit declaration of function 'wgile' is invalid in\
+      C99 [-Wimplicit-function-declaration]\
+        wgile (i < n)\
+        ^\
+jour02.c:14:15: error: expected ';' after expression\
+        wgile (i < n)\
+                     ^\
+  1 #include <unistd.h>\
+                     ;\
+jour02.c:24:19: error: too many arguments to function call, expected single\
+      argument 'c', have 2 arguments\
+        ft_putchar ('@', 42);\
+        ~~~~~~~~~~       ^~\
+  1 /* *************************************************************************    * */\
+  2 /*                                                                                */\
+  3 /*                                                        :::      ::::::::       */\
+  4 /*   jour02.c                                           :+:      :+:    :+:       */\
+  5 /*                                                    +:+ +:+         +:+         */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+            */\
+  7 /*                                                +#+#+#+#+#+   +#+               */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#                 */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr           */\
+ 10 /*                                                                                */\
+ 11 /* *************************************************************************    * */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+jour02.c [+]\
+  2 /*                                                                            *    /\
+  3 /*                                                        :::      ::::::::   *    /\
+  4 /*   jour02.c                                           :+:      :+:    :+:   *    /\
+  5 /*                                                    +:+ +:+         +:+     *    /\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        *    /\
+  7 /*                                                +#+#+#+#+#+   +#+           *    /\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#             *    /\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr       *    /\
+ 10 /*                                                                            *    /\
+ 11 /* ************************************************************************** *    /\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+jour02.c [+]\
+  2 /*                                                                            */\
+  3 /*                                                        :::      ::::::::   */\
+  4 /*   jour02.c                                           :+:      :+:    :+:   */\
+  5 /*                                                    +:+ +:+         +:+     */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */\
+  7 /*                                                +#+#+#+#+#+   +#+           */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#             */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr       */\
+ 10 /*                                                                            */\
+ 11 /* ************************************************************************** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+ 20\
+ 21 int     ft_nputchar(char c, int n)\
+ 22 \{\
+ 23     int i;\
+ 24\
+ 25     i = 0;\
+ 26     while (i < n)\
+ 27         \{\
+ 28             ft_putchar(c);\
+ 29             i = i + 1;\
+jour02.c [+]\
+  2 /*                                                                            */\
+  3 /*                                                        :::      ::::::::   */\
+  4 /*   jour02.c                                           :+:      :+:    :+:   */\
+  5 /*                                                    +:+ +:+         +:+     */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */\
+  7 /*                                                +#+#+#+#+#+   +#+           */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#             */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr       */\
+ 10 /*                                                                            */\
+ 11 /* ************************************************************************** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+ 20\
+ 21 int     ft_nputchar(char c, int n)\
+ 22 \{\
+ 23     int i;\
+ 24\
+ 25     i = 0;\
+ 26     while (i < n)\
+ 27         \{\
+ 28             ft_putchar(c);\
+ 29             i = i + 1;\
+jour02.c [+]\
+  3 /*                                                        :::      ::::::::   */\
+  4 /*   jour02.c                                           :+:      :+:    :+:   */\
+  5 /*                                                    +:+ +:+         +:+     */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */\
+  7 /*                                                +#+#+#+#+#+   +#+           */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#             */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr       */\
+ 10 /*                                                                            */\
+ 11 /* ************************************************************************** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+ 20\
+ 21 int     ft_nputchar(char c, int n)\
+ 22 \{\
+ 23     int i;\
+ 24\
+ 25     i = 0;\
+ 26     while (i < n)\
+ 27         \{\
+ 28             ft_putchar(c);\
+ 29             i = i + 1;\
+jour02.c [+]                                                                             2 /*                                                                            */\
+  3 /*                                                        :::      ::::::::   */\
+  4 /*   jour02.c                                           :+:      :+:    :+:   */\
+  5 /*                                                    +:+ +:+         +:+     */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */\
+  7 /*                                                +#+#+#+#+#+   +#+           */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#             */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr       */\
+ 10 /*                                                                            */\
+ 11 /* ************************************************************************** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+ 20\
+ 21 int     ft_nputchar(char c, int n)\
+ 22 \{\
+ 23     int i;\
+ 24\
+ 25     i = 0;\
+ 26     while (i < n)\
+ 27         \{\
+ 28             ft_putchar(c);\
+ 29             i = i + 1;\
+jour02.c [+]                                                                   /\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#             */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr       */\
+ 10 /*                                                                            */\
+ 11 /* ************************************************************************** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+ 20\
+ 21 int     ft_nputchar(char c, int n)\
+ 22 \{\
+ 23     int i;\
+ 24\
+ 25     i = 0;\
+ 26     while (i < n)\
+ 27         \{\
+ 28             ft_putchar(c);\
+ 29             i = i + 1;\
+jour02.c [+]                                                                          */\
+  3 /*                                                        :::      ::::::::       */\
+  4 /*   jour02.c                                           :+:      :+:    :+:       */\
+  5 /*                                                    +:+ +:+         +:+         */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+            */\
+  7 /*                                                +#+#+#+#+#+   +#+               */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#                 */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr           */\
+ 10 /*                                                                                */\
+ 11 /* ************************************************************************    ** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+jour02.c [+]                                                                          */\
+  3 /*                                                        :::      :::::::    :   */\
+  4 /*   jour02.c                                           :+:      :+:    :+    :   */\
+  5 /*                                                    +:+ +:+         +:+         */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+            */\
+  7 /*                                                +#+#+#+#+#+   +#+               */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#                 */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr           */\
+ 10 /*                                                                                */\
+ 11 /* ***********************************************************************    *** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+jour02.c [+]                                                                      2 /*                                                                                */\
+  3 /*                                                        :::      ::::::    ::   */\
+  4 /*   jour02.c                                           :+:      :+:    :    +:   */\
+  5 /*                                                    +:+ +:+         +:+         */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+            */\
+  7 /*                                                +#+#+#+#+#+   +#+               */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#                 */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr           */\
+ 10 /*                                                                                */\
+ 11 /* **********************************************************************    **** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+jour02.c [+]\
+  2 /*                                                                                */\
+  3 /*                                                        :::      ::::::::       */\
+  4 /*   jour02.c                                           :+:      :+:    :+:       */\
+  5 /*                                                    +:+ +:+         +:+         */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+            */\
+  7 /*                                                +#+#+#+#+#+   +#+               */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#                 */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr           */\
+ 10 /*                                                                                */\
+ 11 /* *************************************************************************    * */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+jour02.c [+]\
+  2 /*                                                                            */\
+  3 /*                                                        :::      ::::::::   */\
+  4 /*   jour02.c                                           :+:      :+:    :+:   */\
+  5 /*                                                    +:+ +:+         +:+     */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */\
+  7 /*                                                +#+#+#+#+#+   +#+           */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#             */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr       */\
+ 10 /*                                                                            */\
+ 11 /* ************************************************************************** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+ 20\
+ 21 int     ft_nputchar(char c, int n)\
+ 22 \{\
+ 23     int i;\
+ 24\
+ 25     i = 0;\
+ 26     while (i < n)\
+ 27         \{\
+ 28             ft_putchar(c);\
+ 29             i = i + 1;\
+jour02.c [+]\
+  3 /*                                                        :::      ::::::::   */\
+  4 /*   jour02.c                                           :+:      :+:    :+:   */\
+  5 /*                                                    +:+ +:+         +:+     */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */\
+  7 /*                                                +#+#+#+#+#+   +#+           */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#             */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr       */\
+ 10 /*                                                                            */\
+ 11 /* ************************************************************************** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+ 20\
+ 21 int     ft_nputchar(char c, int n)\
+ 22 \{\
+ 23     int i;\
+ 24\
+ 25     i = 0;\
+ 26     while (i < n)\
+ 27         \{\
+ 28             ft_putchar(c);\
+ 29             i = i + 1;\
+jour02.c [+]                                                                              3 /*                                                        :::      ::::::::   */\
+  4 /*   jour02.c                                           :+:      :+:    :+:   */\
+  5 /*                                                    +:+ +:+         +:+     */\
+  6 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */\
+  7 /*                                                +#+#+#+#+#+   +#+           */\
+  8 /*   Created: 2020/01/08 10:38:53 by eshilov           #+#    #+#             */\
+  9 /*   Updated: 2020/01/08 10:38:53 by eshilov          ###   ########.fr       */\
+ 10 /*                                                                            */\
+ 11 /* ************************************************************************** */\
+ 12\
+ 13 #include <unistd.h>\
+ 14\
+ 15 int     ft_putchar(char c)\
+ 16 \{\
+ 17     write(1, &c, 1);\
+ 18     return (0);\
+ 19 \}\
+ 20\
+ 21 int     ft_nputchar(char c, int n)\
+ 22 \{\
+ 23     int i;\
+ 24\
+ 25     i = 0;\
+ 26     while (i < n)\
+ 27         \{\
+ 28             ft_putchar(c);\
+ 29             i = i + 1;\
+jour02.c [+]                                                                             25     i = 0;\
+ 26     while (i < n)\
+          jour02.c:3:1: note: 'ft_putchar' declared here\
+int             ft_putchar(char c)\
+^\
+1 warning and 2 errors generated.\
+e1z1r2p42% vim jour02.c\
+e1z1r2p42% gcc -o jour02 jour02.c\
+jour02.c:24:19: error: too many arguments to function call, expected single\
+      argument 'c', have 2 arguments\
+        ft_putchar ('@', 42);\
+        ~~~~~~~~~~       ^~\
+jour02.c:3:1: note: 'ft_putchar' declared here\
+int             ft_putchar(char c)\
+^\
+1 error generated.\
+e1z1r2p42% vim jour02.c\
+e1z1r2p42% gcc -o jour02 jour02.c\
+jour02.c:24:18: error: too many arguments to function call, expected single\
+      argument 'c', have 2 arguments\
+        ft_putchar ('@',42);\
+        ~~~~~~~~~~      ^~\
+jour02.c:3:1: note: 'ft_putchar' declared here\
+int             ft_putchar(char c)\
+^\
+1 error generated.\
+e1z1r2p42% vim jour02.c\
+e1z1r2p42% gcc -o jour02 jour02.c\
+e1z1r2p42% ./jour02\
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\
+e1z1r2p42% vim jour02.c\
+e1z1r2p42% ls\
+jour02		jour02.c\
+e1z1r2p42% cat jour02.c\
+#include <unistd.h>\
+\
+int		ft_putchar(char c)\
+\{\
+	write(1, &c, 1);\
+	return (0);\
+\}\
+\
+int 	ft_nputchar(char c, int n)\
+\{\
+	int i;\
+\
+	i = 0;\
+	while (i < n)\
+		\{\
+			ft_putchar(c);\
+			i = i + 1;\
+		\}\
+	return (0);\
+\}\
+\
+int		main()\
+\{\
+	ft_nputchar ('@', 42);\
+	ft_putchar ('\\n');\
+	return (0);\
+\}\
+e1z1r2p42% ./jour02\
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\
+e1z1r2p42% ls\
+jour02		jour02.c\
+e1z1r2p42% cd ..\
+e1z1r2p42% ;s\
+zsh: command not found: s\
+e1z1r2p42% ls\
+#jour02.c#	day02tests\
+e1z1r2p42% ls -la\
+total 33\
+-rw-r--r--  1 eshilov  2019_october    41 Jan  8 10:16 #jour02.c#\
+drwxr-xr-x  4 eshilov  2019_october  4096 Jan  8 10:16 .\
+drwxr-xr-x  8 eshilov  2019_october  4096 Jan  8 09:18 ..\
+drwxr-xr-x  6 eshilov  2019_october  4096 Jan  8 09:18 .git\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  8 10:40 day02tests\
+e1z1r2p42% ls -la~\
+ls: illegal option -- ~\
+usage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]\
+e1z1r2p42% cat jour02.c\
+cat: jour02.c: No such file or directory\
+e1z1r2p42% ls\
+#jour02.c#	day02tests\
+e1z1r2p42% cd day02tests\
+e1z1r2p42% ls\
+jour02		jour02.c\
+e1z1r2p42% cat jour02.c\
+#include <unistd.h>\
+\
+int		ft_putchar(char c)\
+\{\
+	write(1, &c, 1);\
+	return (0);\
+\}\
+\
+int 	ft_nputchar(char c, int n)\
+\{\
+	int i;\
+\
+	i = 0;\
+	while (i < n)\
+		\{\
+			ft_putchar(c);\
+			i = i + 1;\
+		\}\
+	return (0);\
+\}\
+\
+  1 #include <stdio.h>\
+int		main()\
+\{\
+	ft_nputchar ('@', 42);\
+	ft_putchar ('\\n');\
+  1 #include <stdio.h>\
+	return (0);\
+\}\
+e1z1r2p42%\
+e1z1r2p42%\
+  1 #include <stdio.h>\
+e1z1r2p42% cd ..\
+e1z1r2p42% mkdir ex00\
+e1z1r2p42% touch ft_print_alphabet.c\
+e1z1r2p42% ls\
+#jour02.c#		ex00\
+  1 #include <stdio.h>\
+day02tests		ft_print_alphabet.c\
+e1z1r2p42% rm ft_print_alphabet.c\
+e1z1r2p42% ls\
+#jour02.c#	day02tests	ex00\
+e1z1r2p42% cd day02tests\
+e1z1r2p42% ls\
+jour02		jour02.c\
+e1z1r2p42% cd ..\
+e1z1r2p42% ls\
+#jour02.c#	day02tests	ex00\
+e1z1r2p42% cd ex00\
+e1z1r2p42% ls\
+  1 #include <unistd.h>\
+e1z1r2p42% touch ft_print_alphabet.c\
+e1z1r2p42% ls\
+ft_print_alphabet.c\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+e1z1r2p42% ./ft_print_alphabet\
+abcdefghijklmnopqrstuvwxyz%                                                             e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+e1z1r2p42% ./ft_print_alphabet\
+z\{|\}~%                                                                                 e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+e1z1r2p42% ./ft_print_alphabet\
+z%                                                                                      e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% void ft_print_alphabet(void)\
+zsh: unknown file attribute: v\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+e1z1r2p42% ./ft_print_alphabet\
+abcdefghijklmnopqrstuvwxyz%                                                             e1z1r2p42% void ft_print_alphabet(void)\
+zsh: unknown file attribute: v\
+e1z1r2p42% ./ft_print_alphabet\
+abcdefghijklmnopqrstuvwxyz%                                                             e1z1r2p42% ls\
+ft_print_alphabet	ft_print_alphabet.c\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:10:9: warning: implicit declaration of function 'putchar' is invalid\
+      in C99 [-Wimplicit-function-declaration]\
+        putchar(letter);\
+        ^\
+1 warning generated.\
+e1z1r2p42%\
+Session Contents Restored on Jan 8, 2020 at 12:39 PM\
+Last login: Wed Jan  8 12:39:51 on console\
+e1z1r2p42% ls\
+ft_print_alphabet	ft_print_alphabet.c\
+e1z1r2p42% cat ft_print_alphabet.c\
+#include <unistd.h>\
+  1 #include <unistd.h>\
+\
+void    ft_print_alphabet(void)\
+\{\
+    char    letter;\
+\
+    letter = 'a';\
+    while (letter <= 'z')\
+    \{\
+        putchar(letter);\
+        letter++;\
+    \}\
+\}\
+  1 #include <unistd.h>\
+\
+int main(void)\
+\{\
+    ft_print_alphabet();\
+    return 0;\
+\}\
+e1z1r2p42% vim ft_print_alphabet\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% ls\
+ft_print_alphabet	ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:10:9: warning: implicit declaration of function 'putchar' is invalid\
+  1 #include <unistd.h>\
+      in C99 [-Wimplicit-function-declaration]\
+        putchar(letter);\
+        ^\
+1 warning generated.\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:10:9: warning: implicit declaration of function 'ft_putchar' is\
+      invalid in C99 [-Wimplicit-function-declaration]\
+        ft_putchar(letter);\
+        ^\
+1 warning generated.\
+Undefined symbols for architecture x86_64:\
+  "_ft_putchar", referenced from:\
+      _ft_print_alphabet in ft_print_alphabet-59b3a5.o\
+ld: symbol(s) not found for architecture x86_64\
+clang: error: linker command failed with exit code 1 (use -v to see invocation)\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:10:9: warning: implicit declaration of function 'ft_putchar' is\
+      invalid in C99 [-Wimplicit-function-declaration]\
+        ft_putchar(letter);\
+        ^\
+1 warning generated.\
+  1 #include <unistd.h>\
+Undefined symbols for architecture x86_64:\
+  "_ft_putchar", referenced from:\
+      _ft_print_alphabet in ft_print_alphabet-a1174b.o\
+ld: symbol(s) not found for architecture x86_64\
+clang: error: linker command failed with exit code 1 (use -v to see invocation)\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:10:3: warning: implicit declaration of function 'ft_putchar' is\
+      invalid in C99 [-Wimplicit-function-declaration]\
+                ft_putchar(letter);\
+                ^\
+1 warning generated.\
+  1 #include <unistd.h>\
+Undefined symbols for architecture x86_64:\
+  "_ft_putchar", referenced from:\
+      _ft_print_alphabet in ft_print_alphabet-daeb35.o\
+ld: symbol(s) not found for architecture x86_64\
+clang: error: linker command failed with exit code 1 (use -v to see invocation)\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:10:3: warning: implicit declaration of function 'ft_putchar' is\
+  1 #include <unistd.h>\
+      invalid in C99 [-Wimplicit-function-declaration]\
+                ft_putchar(letter);\
+                ^\
+1 warning generated.\
+Undefined symbols for architecture x86_64:\
+  "_ft_putchar", referenced from:\
+      _ft_print_alphabet in ft_print_alphabet-79be25.o\
+  6     printf("\\n");\
+ld: symbol(s) not found for architecture x86_64\
+clang: error: linker command failed with exit code 1 (use -v to see invocation)\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:10:9: warning: implicit declaration of function 'ft_putchar' is\
+      invalid in C99 [-Wimplicit-function-declaration]\
+        ft_putchar(letter);\
+        ^\
+1 warning generated.\
+Undefined symbols for architecture x86_64:\
+  "_ft_putchar", referenced from:\
+      _ft_print_alphabet in ft_print_alphabet-6e88b9.o\
+ld: symbol(s) not found for architecture x86_64\
+clang: error: linker command failed with exit code 1 (use -v to see invocation)\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+Undefined symbols for architecture x86_64:\
+  "_ft_putchar", referenced from:\
+      _ft_print_alphabet in ft_print_alphabet-f6e9ed.o\
+ld: symbol(s) not found for architecture x86_64\
+clang: error: linker command failed with exit code 1 (use -v to see invocation)\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:10:9: warning: implicit declaration of function 'putchar' is invalid\
+      in C99 [-Wimplicit-function-declaration]\
+  1 void lowercaseAlphabets()\
+        putchar(letter);\
+  1 #include <stdio.h>\
+        ^\
+1 warning generated.\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:5:9: warning: implicitly declaring library function 'printf' with type\
+      'int (const char *, ...)' [-Wimplicit-function-declaration]\
+        printf("%c ", c);\
+        ^\
+ft_print_alphabet.c:5:9: note: include the header <stdio.h> or explicitly provide a\
+      declaration for 'printf'\
+1 warning generated.\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:5:9: warning: implicitly declaring library function 'printf' with type\
+      'int (const char *, ...)' [-Wimplicit-function-declaration]\
+        printf("%c ", c);\
+        ^\
+ft_print_alphabet.c:5:9: note: include the header <stdio.h> or explicitly provide a\
+      declaration for 'printf'\
+1 warning generated.\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+ft_print_alphabet.c:5:9: warning: implicitly declaring library function 'printf' with type\
+      'int (const char *, ...)' [-Wimplicit-function-declaration]\
+        printf("%c ", c);\
+        ^\
+ft_print_alphabet.c:5:9: note: include the header <stdio.h> or explicitly provide a\
+      declaration for 'printf'\
+1 warning generated.\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+e1z1r2p42% ./ft_print_alphabet\
+abcdefghijklmnopqrstuvwxyz%                                                               e1z1r2p42% vim ft_print_alphabet.c\
+e1z1r2p42% gcc -o ft_print_alphabet ft_print_alphabet.c\
+e1z1r2p42% gcc ft_print_alphabet.c -o ft_print_alphabet\
+e1z1r2p42% ./ft_print_alphabet\
+abcdefghijklmnopqrstuvwxyz%                                                               e1z1r2p42% cd\
+e1z1r2p42% ls\
+Desktop		Downloads	dead.letter	goinfre\
+Documents	Library		eshilov\
+e1z1r2p42% cd goinfre\
+e1z1r2p42% ls\
+gcc\
+e1z1r2p42% ls -l\
+total 0\
+-rw-r--r--  1 eshilov  2019_october  0 Jan  8 09:10 gcc\
+e1z1r2p42% cd chechday00\
+cd: no such file or directory: chechday00\
+e1z1r2p42% mkdir checkday00\
+e1z1r2p42% cd checkday00\
+e1z1r2p42% ls\
+e1z1r2p42% pwd\
+/nfs/2019/e/eshilov/goinfre/checkday00\
+e1z1r2p42% ls\
+e1z1r2p42% git clone vogsphere@vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov evaluate\
+Cloning into 'evaluate'...\
+vogsphere: (INFO) Transaction ID : 54b1b785-4897-43b7-87e5-cc17a2791c9c\
+vogsphere: (INFO) Please mention this ID in any ticket you create concerning this transaction\
+vogsphere: (INFO) This transaction has been started at 2020-01-08 14:31:39, server time.\
+vogsphere: (INFO) Rights will be determined using this time, so do NOT cut the connection.\
+vogsphere: (INFO) It appears you are eshilov. If that's not true, check your Kerberos tickets (klist)\
+vogsphere: (INFO) You have read and write rights on this repository\
+remote: Counting objects: 45, done.\
+remote: Total 45 (delta 0), reused 0 (delta 0)\
+Receiving objects: 100% (45/45), 69.85 KiB | 23.28 MiB/s, done.\
+e1z1r2p42% ls\
+evaluate\
+e1z1r2p42% cd evaluate\
+e1z1r2p42% pwd\
+/nfs/2019/e/eshilov/goinfre/checkday00/evaluate\
+e1z1r2p42% cat ex01/z\
+Z\
+e1z1r2p42% ls ex02\
+testDay00.tar\
+e1z1r2p42% cd ex02\
+e1z1r2p42% tar -xf testDay00.tar\
+e1z1r2p42% ls -l\
+total 8\
+-rw-r--r--  1 eshilov  2019_october  1024 Jan  8 14:31 testDay00.tar\
+e1z1r2p42% tar -xf testDay00.tar\
+e1z1r2p42% ls\
+testDay00.tar\
+e1z1r2p42% ls -la\
+total 8\
+drwxr-xr-x   3 eshilov  2019_october   102 Jan  8 14:31 .\
+drwxr-xr-x  15 eshilov  2019_october   510 Jan  8 14:31 ..\
+-rw-r--r--   1 eshilov  2019_october  1024 Jan  8 14:31 testDay00.tar\
+e1z1r2p42% tar -xf testDay00.tar\
+e1z1r2p42% open .\
+e1z1r2p42% ls -la\
+total 32\
+drwxr-xr-x   5 eshilov  2019_october   170 Jan  8 14:34 .\
+drwxr-xr-x  15 eshilov  2019_october   510 Jan  8 14:31 ..\
+-rw-r--r--@  1 eshilov  2019_october  6148 Jan  8 14:34 .DS_Store\
+-rw-r--r--@  1 eshilov  2019_october  1024 Jan  8 14:31 testDay00.tar\
+-rw-r--r--   1 eshilov  2019_october   241 Jan  8 14:34 testDay00.tar.cpgz\
+e1z1r2p42% rm -rf .DS_Store testDay00.tar.cpgz\
+e1z1r2p42% ls\
+testDay00.tar\
+e1z1r2p42% cd ..\
+e1z1r2p42% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r2p42% cd ex03\
+e1z1r2p42% tar -xf exo3.tar\
+e1z1r2p42% ls\
+exo3.tar	test0		test1		test2		test3		test4		test5		test6\
+e1z1r2p42% ls -l\
+total 56\
+-rw-r--r--  1 eshilov  2019_october  6144 Jan  8 14:31 exo3.tar\
+drwx--xr-x  2 eshilov  2019_october    68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october    68 Jun  1  2020 test2\
+-rw-r--r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r--r--  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-rw-r--r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxr-xr-x  1 eshilov  2019_october     5 Jan  6 19:20 test6 -> test0\
+e1z1r2p42% cd ..\
+e1z1r2p42% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r2p42% cd ex02\
+e1z1r2p42% ls\
+testDay00.tar\
+e1z1r2p42% tar -xf testDay00.tar\
+e1z1r2p42% ls\
+testDay00.tar\
+e1z1r2p42% ls -la\
+total 8\
+drwxr-xr-x   3 eshilov  2019_october   102 Jan  8 14:35 .\
+drwxr-xr-x  15 eshilov  2019_october   510 Jan  8 14:31 ..\
+-rw-r--r--@  1 eshilov  2019_october  1024 Jan  8 14:31 testDay00.tar\
+e1z1r2p42% ls\
+testDay00.tar\
+e1z1r2p42% tar -xf testDay00.tar\
+e1z1r2p42% ls\
+testDay00.tar\
+e1z1r2p42% ls -la\
+total 8\
+drwxr-xr-x   3 eshilov  2019_october   102 Jan  8 14:35 .\
+drwxr-xr-x  15 eshilov  2019_october   510 Jan  8 14:31 ..\
+-rw-r--r--@  1 eshilov  2019_october  1024 Jan  8 14:31 testDay00.tar\
+e1z1r2p42% cat testDay00.tar\
+e1z1r2p42% chmod 755 testDay00.tar\
+e1z1r2p42% cat testDay00.tar\
+e1z1r2p42% tar -xf testDay00.tar\
+e1z1r2p42% cd\
+e1z1r2p42% ls\
+Desktop		Documents	Downloads	Library		dead.letter	eshilov		goinfre\
+e1z1r2p42% cd eshilov\
+e1z1r2p42% ls\
+day00			day00_archieve.tar	day02			files.txt		testtest5\
+day00.zip		day01			files-recursive.txt	policy\
+e1z1r2p42% tar -xf day00_archieve.tar\
+e1z1r2p42% cd day00\
+e1z1r2p42% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r2p42% cd ex02\
+e1z1r2p42% ls\
+testDay00.tar\
+e1z1r2p42% tar -xf testDay00.tar\
+e1z1r2p42% ls\
+testDay00.tar\
+e1z1r2p42%\
+e1z1r2p42% cd ~/goinfre/checkday00/evaluate\
+e1z1r2p42% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r2p42% cd ex02\
+e1z1r2p42% ls -l\
+total 8\
+-rwxr-xr-x@ 1 eshilov  2019_october  1024 Jan  8 14:31 testDay00.tar\
+e1z1r2p42% chmod 777 testDay00.tar\
+e1z1r2p42% tar -xf\
+tar: Option -f requires an argument\
+Usage:\
+  List:    tar -tf <archive-filename>\
+  Extract: tar -xf <archive-filename>\
+  Create:  tar -cf <archive-filename> [filenames...]\
+  Help:    tar --help\
+e1z1r2p42% tar -xf testDay00.tar\
+e1z1r2p42% ls\
+testDay00.tar\
+e1z1r2p42% ls -l\
+total 8\
+-rwxrwxrwx@ 1 eshilov  2019_october  1024 Jan  8 14:31 testDay00.tar\
+e1z1r2p42% cd ..\
+e1z1r2p42% cd ex03\
+e1z1r2p42% ls\
+exo3.tar	test0		test1		test2		test3		test4		test5		test6\
+  1 #!/bin/sh\
+  2\
+e1z1r2p42% ls -l\
+total 56\
+-rw-r--r--  1 eshilov  2019_october  6144 Jan  8 14:31 exo3.tar\
+drwx--xr-x  2 eshilov  2019_october    68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october    68 Jun  1  2020 test2\
+-rw-r--r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r--r--  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-rw-r--r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxr-xr-x  1 eshilov  2019_october     5 Jan  6 19:20 test6 -> test0\
+e1z1r2p42% ls\
+exo3.tar	test0		test1		test2		test3		test4		test5		test6\
+e1z1r2p42% cd ../ex04\
+e1z1r2p42% ls\
+klist.txt\
+e1z1r2p42% cat klist.txt\
+Jan  6 14:23:30 2020  Jan  7 00:23:30 2020  krbtgt/42.US.ORG@42.US.ORG\
+Jan  6 14:23:31 2020  Jan  7 00:23:30 2020  ldap/ldap-master.42.us.org@42.US.ORG\
+Jan  6 14:38:55 2020  Jan  7 00:23:30 2020  host/vgs-fn1.42.us.org@42.US.ORG\
+e1z1r2p42% cd ..\
+e1z1r2p42% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r2p42% cd ex05\
+e1z1r2p42% ls\
+midLS\
+e1z1r2p42% cat midLS\
+ls -Ump\
+e1z1r2p42% cd ..\
+e1z1r2p42% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r2p42% cd ex06\
+e1z1r2p42% ls\
+git_commit.sh\
+e1z1r2p42% cat git_commit.sh\
+git log -5 --pretty=format:"%H"\
+e1z1r2p42% bash git_commit.sh | cat -e\
+f3d89b0c3872fd4868d4fc48f906012898796571$\
+0cc50f710ccb5656f9ddaf290b302bb4448bb23e$\
+8c06f0794bd01a7b3f4f889389038382a4e858dd$\
+0cd5f095c0d5921a268fc379904824b5595bf3b4$\
+9bd3f130452c115f8261fca883ec7cc3d2ae74ed%                                                                                                        e1z1r2p42% vim test.sh\
+e1z1r2p42% ls\
+git_commit.sh\
+e1z1r2p42% cd ..\
+e1z1r2p42% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r2p42% cd ex07\
+e1z1r2p42% ls\
+git_ignore.sh\
+e1z1r2p42% cat git_ignore.sh\
+git ls-files --exclude-standard --ignored --others\
+e1z1r2p42% cd ../ex08\
+e1z1r2p42% ls\
+b\
+e1z1r2p42% cat b\
+Episode V, A NEW H0PE It is a period of civil war\
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.\
+During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the STAR DEATH, an armored space station with enough power to destroy an entire planet.\
+\
+\
+Pursued by the Empire's sinister agents,\
+Princess Mehdi races home aboard her starship, custodian of the stolen plans that can save her people and restore the dictatorship to the galaxie..\
+\
+\
+\
+\
+e1z1r2p42% cd  ..\
+e1z1r2p42% cd ex09\
+e1z1r2p42% ls\
+clean\
+e1z1r2p42% cat clean\
+find . -name '#*#' -print -delete -o -name '*~' -print -delete\
+e1z1r2p42% cd ..\
+e1z1r2p42% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r2p42% cd ex10\
+e1z1r2p42% ls\
+ft_magic\
+e1z1r2p42% cat ft_magic\
+42	string	42	42 file\
+e1z1r2p42%}

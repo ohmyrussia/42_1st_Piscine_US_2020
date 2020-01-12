@@ -1,45 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/11 17:12:50 by eshilov           #+#    #+#             */
-/*   Updated: 2020/01/11 19:39:02 by eshilov          ###   ########.fr       */
+/*   Created: 2020/01/08 21:25:51 by eshilov           #+#    #+#             */
+/*   Updated: 2020/01/08 22:36:48 by eshilov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include <stdio.h>
 
-int		ft_iteractive_factorial(int nb)
+int		ft_putchar (char c)
 {
-	int i;
-	int res;
-
-	i = 1;
-	res = 1;
-	if ((nb <= 0) || (nb >= 12))
-	{
-		return (0);
-	}
-	if (nb == 1)
-	{
-		return (1);
-	}
-	while (i <= nb)
-	{
-		res = res * i;
-		i++;
-	}
-	return (res);
+	write(1,&c,1);
+	return(0);
 }
 
-int		main(void)
+void	 ft_is_negative(int n)
 {
-	int nb;
+	if (n >=0)
+	{
+		ft_putchar('P');
+	}
+	else
+	{
+		ft_putchar('N');
+	}
+}
 
-	scanf("%d", &nb);
-	printf("The Factorial of %d is %d", nb, ft_iteractive_factorial(nb));
-	return (0);
+int		 main(void)
+{
+	//char	*buff;
+	int		num;
+
+	//read(1, buff, sizeof(buff));
+	//num = buff(0) - '0';
+	scanf("%d",&num);
+	ft_is_negative(num);
+
+	//ft_is_negative(1);
+	return(0);
 }

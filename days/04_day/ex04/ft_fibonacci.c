@@ -1,45 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eshilov <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/11 17:12:50 by eshilov           #+#    #+#             */
-/*   Updated: 2020/01/11 19:39:02 by eshilov          ###   ########.fr       */
+/*   Created: 2020/01/11 21:45:17 by eshilov           #+#    #+#             */
+/*   Updated: 2020/01/11 22:26:38 by eshilov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int		ft_iteractive_factorial(int nb)
+int		ft_fibonacci(int index)
 {
-	int i;
-	int res;
-
-	i = 1;
-	res = 1;
-	if ((nb <= 0) || (nb >= 12))
-	{
+	if (index < 0)
 		return (0);
-	}
-	if (nb == 1)
-	{
+	if (index <= 2)
 		return (1);
-	}
-	while (i <= nb)
+	else
 	{
-		res = res * i;
-		i++;
+		return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 	}
-	return (res);
 }
 
 int		main(void)
 {
-	int nb;
+	int index;
 
-	scanf("%d", &nb);
-	printf("The Factorial of %d is %d", nb, ft_iteractive_factorial(nb));
+	scanf("%d", &index);
+	printf("%d", ft_fibonacci(index));
 	return (0);
 }

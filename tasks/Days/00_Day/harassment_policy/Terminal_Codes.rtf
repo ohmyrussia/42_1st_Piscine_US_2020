@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\margl1440\margr1440\vieww25320\viewh9820\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 \CocoaLigature0 Last login: Mon Jan  6 12:47:34 on console\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov\
+e1z1r4p10% ls \
+Desktop		Downloads	eshilov\
+Documents	Library		goinfre\
+e1z1r4p10% man\
+What manual page do you want?\
+e1z1r4p10% man ls\
+e1z1r4p10% uit\
+zsh: command not found: uit\
+e1z1r4p10% ls\
+Desktop		Downloads	eshilov\
+Documents	Library		goinfre\
+e1z1r4p10% rm -R eshilov\
+e1z1r4p10% ls\
+Desktop		Documents	Downloads	Library		goinfre\
+e1z1r4p10% git clone vogsphere@vgs.42.us.org:intra/2020/activities/42_piscine_c_harassment_policy/eshilov2 eshilov\
+Cloning into 'eshilov'...\
+vogsphere: (INFO) Transaction ID : a678948b-d008-448e-bd24-fb05598d69b5\
+vogsphere: (INFO) Please mention this ID in any ticket you create concerning this transaction\
+vogsphere: (INFO) This transaction has been started at 2020-01-06 12:59:51, server time.\
+vogsphere: (INFO) Rights will be determined using this time, so do NOT cut the connection.\
+vogsphere: (INFO) It appears you are eshilov. If that's not true, check your Kerberos tickets (klist)\
+vogsphere: (INFO) You have read and write rights on this repository\
+warning: You appear to have cloned an empty repository.\
+e1z1r4p10% cd eshilov\
+e1z1r4p10% mkdir policy\
+e1z1r4p10% cd policy\
+e1z1r4p10% cp ~/Downloads/agree.txt .\
+e1z1r4p10% ls\
+agree.txt\
+e1z1r4p10% git add .\
+e1z1r4p10% git commit -m "harassment assesment done"\
+[master (root-commit) a920fcf] harassment assesment done\
+ Committer: Evgeny Shilov <eshilov@e1z1r4p10.42.us.org>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly. Run the\
+following command and follow the instructions in your editor to edit\
+your configuration file:\
+\
+    git config --global --edit\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 2 files changed, 2 insertions(+)\
+ create mode 100644 policy/._agree.txt\
+ create mode 100644 policy/agree.txt\
+e1z1r4p10% git push\
+vogsphere: (INFO) Transaction ID : 5415a606-d437-421e-8d21-69d6a1fe3954\
+vogsphere: (INFO) Please mention this ID in any ticket you create concerning this transaction\
+vogsphere: (INFO) This transaction has been started at 2020-01-06 13:02:45, server time.\
+vogsphere: (INFO) Rights will be determined using this time, so do NOT cut the connection.\
+vogsphere: (INFO) It appears you are eshilov. If that's not true, check your Kerberos tickets (klist)\
+vogsphere: (INFO) You have read and write rights on this repository\
+Counting objects: 5, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (5/5), 659 bytes | 219.00 KiB/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+To vgs.42.us.org:intra/2020/activities/42_piscine_c_harassment_policy/eshilov2\
+ * [new branch]      master -> master\
+e1z1r4p10% git ls-tree --full-tree -r --name-only HEAD\
+policy/._agree.txt\
+policy/agree.txt\
+e1z1r4p10% \
+}

@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Last login: Mon Jan  6 21:03:11 on ttys001\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov\
+e1z1r4p10% cd eshilov\
+e1z1r4p10% ls\
+day00			files-recursive.txt	policy\
+day00.zip		files.txt		testtest5\
+e1z1r4p10% cd\
+e1z1r4p10% ls\
+Desktop		Downloads	dead.letter	goinfre\
+Documents	Library		eshilov\
+e1z1r4p10% cd goinfre\
+e1z1r4p10% ls\
+day00\
+e1z1r4p10% cd day00\
+e1z1r4p10% git remote\
+origin\
+e1z1r4p10% git remote -v\
+origin	vogsphere@vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov (fetch)\
+origin	vogsphere@vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov (push)\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05	ex06\
+e1z1r4p10% git add.\
+git: 'add.' is not a git command. See 'git --help'.\
+\
+The most similar command is\
+	add\
+e1z1r4p10% git add .\
+e1z1r4p10% git commit -m "from ex1 to ex6"\
+[master 8c06f07] from ex1 to ex6\
+ Committer: Evgeny Shilov <eshilov@e1z1r4p10.42.us.org>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly. Run the\
+following command and follow the instructions in your editor to edit\
+your configuration file:\
+\
+    git config --global --edit\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 3 files changed, 2 insertions(+), 1 deletion(-)\
+ create mode 100644 ex06/.git_commit.sh.swp\
+ create mode 100644 ex06/git_commit.sh\
+e1z1r4p10% git push\
+vogsphere: (INFO) Transaction ID : 41d61a63-98b9-4b70-965f-8b048b1e477a\
+vogsphere: (INFO) Please mention this ID in any ticket you create concerning this transaction\
+vogsphere: (INFO) This transaction has been started at 2020-01-06 21:09:00, server time.\
+vogsphere: (INFO) Rights will be determined using this time, so do NOT cut the connection.\
+vogsphere: (INFO) It appears you are eshilov. If that's not true, check your Kerberos tickets (klist)\
+vogsphere: (INFO) You have read and write rights on this repository\
+Counting objects: 7, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (7/7), 1.78 KiB | 1.78 MiB/s, done.\
+Total 7 (delta 1), reused 0 (delta 0)\
+To vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov\
+   0cd5f09..8c06f07  master -> master\
+e1z1r4p10% git ls-tree --full-tree -r --name-only HEAD\
+.DS_Store\
+._.DS_Store\
+ex01/z\
+ex02/testDay00.tar\
+ex03/.DS_Store\
+ex03/exo3.tar\
+ex04/klist.txt\
+ex05/midLS\
+ex06/.git_commit.sh.swp\
+ex06/git_commit.sh\
+e1z1r4p10%}

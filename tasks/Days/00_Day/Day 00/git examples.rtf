@@ -1,0 +1,1156 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red153\green153\blue153;
+\red230\green229\blue230;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c66422\c66424\c66423;
+\cssrgb\c91984\c91986\c91985;}
+\margl1440\margr1440\vieww14440\viewh13260\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \CocoaLigature0 Last login: Mon Jan  6 16:02:31 on ttys000\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov\
+e1z1r4p10% cd eshilov \
+e1z1r4p10% ls\
+day00	policy\
+e1z1r4p10% cd day00\
+e1z1r4p10% cd ex03\
+e1z1r4p10% ls\
+test0	test1	test2	test3	test4	test5	test6\
+e1z1r4p10% ls -l\
+total 21\
+drwx--xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  1 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  1 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jan  6 16:34 test6 -> test0\
+e1z1r4p10% ln test3 test5\
+ln: test5: File exists\
+e1z1r4p10% rm test5 \
+override r-----r--  eshilov/2019_october for test5? y\
+e1z1r4p10% ls\
+test0	test1	test2	test3	test4	test6\
+e1z1r4p10% ln test3 test5\
+e1z1r4p10% ls\
+test0	test1	test2	test3	test4	test5	test6\
+e1z1r4p10% ls -l\
+total 21\
+drwx--xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jan  6 16:34 test6 -> test0\
+e1z1r4p10% chmod 755 test6\
+e1z1r4p10% ls -l\
+total 21\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jan  6 16:34 test6 -> test0\
+e1z1r4p10% touch -mt 202006012220 test6    \
+e1z1r4p10% ls -l\
+total 21\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jan  6 16:34 test6 -> test0\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/eshilov/day00/ex03\
+e1z1r4p10% cd ..\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/eshilov/day00\
+e1z1r4p10% cd ex04\
+e1z1r4p10% ls\
+klist.txt\
+e1z1r4p10% man klist\
+e1z1r4p10% vim klist.txt\
+e1z1r4p10% klist\
+Credentials cache: API:63307\
+        Principal: eshilov@42.US.ORG\
+\
+  Issued                Expires               Principal\
+Jan  6 14:23:30 2020  Jan  7 00:23:30 2020  krbtgt/42.US.ORG@42.US.ORG\
+Jan  6 14:23:31 2020  Jan  7 00:23:30 2020  ldap/ldap-master.42.us.org@42.US.ORG\
+Jan  6 14:38:55 2020  Jan  7 00:23:30 2020  host/vgs-fn1.42.us.org@42.US.ORG\
+e1z1r4p10% vim klist.txt\
+e1z1r4p10% cd ..\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04\
+e1z1r4p10% cd ex03\
+e1z1r4p10% ls -l\
+total 21\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jan  6 16:34 test6 -> test0\
+e1z1r4p10% chmod -h 755 test6 \
+e1z1r4p10% ls -l\
+total 21\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jan  6 16:34 test6 -> test0\
+e1z1r4p10% lchmod 755 test6\
+zsh: command not found: lchmod\
+e1z1r4p10% touchmod -mht 202006012220 test6\
+zsh: command not found: touchmod\
+e1z1r4p10% touch -mht 202006012220 test6\
+e1z1r4p10% ls -l\
+total 21\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jun  1  2020 test6 -> test0\
+e1z1r4p10% chmod -h 755 test6 \
+e1z1r4p10% ls -l\
+total 21\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jun  1  2020 test6 -> test0\
+e1z1r4p10%   \
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/eshilov/day00/ex03\
+e1z1r4p10% cd ..\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/eshilov/day00\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/eshilov/day00\
+e1z1r4p10% cd ..\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/eshilov\
+e1z1r4p10% \
+\cf4 \cb5   [Restored Jan 6, 2020 at 6:32:40 PM]\cf2 \
+\cb3 Last login: Mon Jan  6 18:32:38 on console\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov\
+e1z1r4p10% cd eshilov\
+e1z1r4p10% ls\
+day00	policy\
+e1z1r4p10% cd day00\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04\
+e1z1r4p10% mkdir ex05 ex06 ex07 ex08 ex09 ex10\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% cd ex05\
+e1z1r4p10% ls\
+e1z1r4p10% touch midLS\
+e1z1r4p10% ls -a\
+.	..	midLS\
+e1z1r4p10% cd ..\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% ls -a\
+.		._.DS_Store	ex02		ex05		ex08\
+..		.git		ex03		ex06		ex09\
+.DS_Store	ex01		ex04		ex07		ex10\
+e1z1r4p10% ls * -r\
+ls: -r: No such file or directory\
+ex01:\
+z\
+\
+ex02:\
+testDay00.tar\
+\
+ex03:\
+test0	test1	test2	test3	test4	test5	test6\
+\
+ex04:\
+klist.txt\
+\
+ex05:\
+midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% file */*\
+ex01/z:             ASCII text\
+ex02/testDay00.tar: data\
+ex03/test0:         directory\
+ex03/test1:         ASCII text\
+ex03/test2:         directory\
+ex03/test3:         very short file (no magic)\
+ex03/test4:         ASCII text\
+ex03/test5:         very short file (no magic)\
+ex03/test6:         directory\
+ex04/klist.txt:     ASCII text\
+ex05/midLS:         empty\
+e1z1r4p10% klist\
+Credentials cache: API:63307\
+        Principal: eshilov@42.US.ORG\
+\
+  Issued                Expires               Principal\
+Jan  6 18:32:36 2020  Jan  7 04:32:36 2020  krbtgt/42.US.ORG@42.US.ORG\
+Jan  6 18:32:37 2020  Jan  7 04:32:36 2020  ldap/ldap-master.42.us.org@42.US.ORG\
+e1z1r4p10% file */*\
+\
+ex01/z:             ASCII text\
+ex02/testDay00.tar: data\
+ex03/test0:         directory\
+ex03/test1:         ASCII text\
+ex03/test2:         directory\
+ex03/test3:         very short file (no magic)\
+ex03/test4:         ASCII text\
+ex03/test5:         very short file (no magic)\
+ex03/test6:         directory\
+ex04/klist.txt:     ASCII text\
+ex05/midLS:         empty\
+e1z1r4p10% file */* *>> ../files.txt\
+file */* -r *>> ../files-recursive.txt\
+e1z1r4p10% find . -type f\
+\
+./.DS_Store\
+./ex02/testDay00.tar\
+./.git/info/exclude\
+./.git/HEAD\
+./.git/description\
+./.git/config\
+./.git/hooks/applypatch-msg.sample\
+./.git/hooks/pre-receive.sample\
+./.git/hooks/commit-msg.sample\
+./.git/hooks/pre-commit.sample\
+./.git/hooks/update.sample\
+./.git/hooks/post-update.sample\
+./.git/hooks/pre-applypatch.sample\
+./.git/hooks/pre-rebase.sample\
+./.git/hooks/pre-push.sample\
+./.git/hooks/prepare-commit-msg.sample\
+./ex05/midLS\
+./._.DS_Store\
+./ex04/klist.txt\
+./ex01/z\
+./ex03/test5\
+./ex03/test1\
+./ex03/test3\
+./ex03/test4\
+e1z1r4p10% ls * -r\
+\
+ls: -r: No such file or directory\
+ex01:\
+z\
+\
+ex02:\
+testDay00.tar\
+\
+ex03:\
+test0	test1	test2	test3	test4	test5	test6\
+\
+ex04:\
+klist.txt\
+\
+ex05:\
+midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% ls -l                                                \
+total 80\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 15:06 ex01\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 16:08 ex02\
+drwxr-xr-x  4 eshilov  2019_october  4096 Jan  6 17:04 ex03\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 17:32 ex04\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:35 ex05\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex06\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex07\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex08\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex09\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex10\
+e1z1r4p10% ls -l * r\
+ls: r: No such file or directory\
+ex01:\
+total 1\
+-rw-r--r--  1 eshilov  2019_october  2 Jan  6 15:06 z\
+\
+ex02:\
+total 2\
+-rw-r--r--  1 eshilov  2019_october  1024 Jan  6 15:19 testDay00.tar\
+\
+ex03:\
+total 21\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jun  1  2020 test6 -> test0\
+\
+ex04:\
+total 1\
+-rw-r--r--  1 eshilov  2019_october  229 Jan  6 17:32 klist.txt\
+\
+ex05:\
+total 0\
+-rw-r--r--  1 eshilov  2019_october  0 Jan  6 18:35 midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% ls r\
+ls: r: No such file or directory\
+e1z1r4p10% ls * R\
+ls: R: No such file or directory\
+ex01:\
+z\
+\
+ex02:\
+testDay00.tar\
+\
+ex03:\
+test0	test1	test2	test3	test4	test5	test6\
+\
+ex04:\
+klist.txt\
+\
+ex05:\
+midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% ls -m\
+ex01, ex02, ex03, ex04, ex05, ex06, ex07, ex08, ex09, ex10\
+e1z1r4p10% ls -l -m * r\
+ls: r: No such file or directory\
+ex01:\
+z\
+\
+ex02:\
+testDay00.tar\
+\
+ex03:\
+test0, test1, test2, test3, test4, test5, test6\
+\
+ex04:\
+klist.txt\
+\
+ex05:\
+midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% ls -l * R\
+ls: R: No such file or directory\
+ex01:\
+total 1\
+-rw-r--r--  1 eshilov  2019_october  2 Jan  6 15:06 z\
+\
+ex02:\
+total 2\
+-rw-r--r--  1 eshilov  2019_october  1024 Jan  6 15:19 testDay00.tar\
+\
+ex03:\
+total 21\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jun  1  2020 test6 -> test0\
+\
+ex04:\
+total 1\
+-rw-r--r--  1 eshilov  2019_october  229 Jan  6 17:32 klist.txt\
+\
+ex05:\
+total 0\
+-rw-r--r--  1 eshilov  2019_october  0 Jan  6 18:35 midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% ls -m\
+ex01, ex02, ex03, ex04, ex05, ex06, ex07, ex08, ex09, ex10\
+e1z1r4p10% ls -lm\
+ex01, ex02, ex03, ex04, ex05, ex06, ex07, ex08, ex09, ex10\
+e1z1r4p10% ls -l -m\
+ex01, ex02, ex03, ex04, ex05, ex06, ex07, ex08, ex09, ex10\
+e1z1r4p10% ls -m -l\
+total 80\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 15:06 ex01\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 16:08 ex02\
+drwxr-xr-x  4 eshilov  2019_october  4096 Jan  6 17:04 ex03\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 17:32 ex04\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:35 ex05\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex06\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex07\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex08\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex09\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex10\
+e1z1r4p10% ls -m -l * R\
+ls: R: No such file or directory\
+ex01:\
+total 1\
+-rw-r--r--  1 eshilov  2019_october  2 Jan  6 15:06 z\
+\
+ex02:\
+total 2\
+-rw-r--r--  1 eshilov  2019_october  1024 Jan  6 15:19 testDay00.tar\
+\
+ex03:\
+total 21\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jun  1  2020 test0\
+-rwx--xr--  1 eshilov  2019_october     4 Jun  1  2020 test1\
+dr-x---r--  2 eshilov  2019_october  4096 Jun  1  2020 test2\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test3\
+-rw-r----x  1 eshilov  2019_october     2 Jun  1  2020 test4\
+-r-----r--  2 eshilov  2019_october     1 Jun  1  2020 test5\
+lrwxrwxrwx  1 eshilov  2019_october     5 Jun  1  2020 test6 -> test0\
+\
+ex04:\
+total 1\
+-rw-r--r--  1 eshilov  2019_october  229 Jan  6 17:32 klist.txt\
+\
+ex05:\
+total 0\
+-rw-r--r--  1 eshilov  2019_october  0 Jan  6 18:35 midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% ls -t\
+ex05	ex08	ex09	ex10	ex06	ex07	ex04	ex03	ex02	ex01\
+e1z1r4p10% ls -t -m * R\
+ls: R: No such file or directory\
+ex05:\
+midLS\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+\
+ex06:\
+\
+ex07:\
+\
+ex04:\
+klist.txt\
+\
+ex03:\
+test3, test5, test4, test2, test0, test6, test1\
+\
+ex02:\
+testDay00.tar\
+\
+ex01:\
+z\
+e1z1r4p10% ls * R\
+ls: R: No such file or directory\
+ex01:\
+z\
+\
+ex02:\
+testDay00.tar\
+\
+ex03:\
+test0	test1	test2	test3	test4	test5	test6\
+\
+ex04:\
+klist.txt\
+\
+ex05:\
+midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% ls * r\
+ls: r: No such file or directory\
+ex01:\
+z\
+\
+ex02:\
+testDay00.tar\
+\
+ex03:\
+test0	test1	test2	test3	test4	test5	test6\
+\
+ex04:\
+klist.txt\
+\
+ex05:\
+midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% ls -R\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+\
+./ex01:\
+z\
+\
+./ex02:\
+testDay00.tar\
+\
+./ex03:\
+test0	test1	test2	test3	test4	test5	test6\
+\
+./ex03/test0:\
+\
+./ex03/test2:\
+\
+./ex04:\
+klist.txt\
+\
+./ex05:\
+midLS\
+\
+./ex06:\
+\
+./ex07:\
+\
+./ex08:\
+\
+./ex09:\
+\
+./ex10:\
+e1z1r4p10% ls -t -R\
+ex05	ex08	ex09	ex10	ex06	ex07	ex04	ex03	ex02	ex01\
+\
+./ex05:\
+midLS\
+\
+./ex08:\
+\
+./ex09:\
+\
+./ex10:\
+\
+./ex06:\
+\
+./ex07:\
+\
+./ex04:\
+klist.txt\
+\
+./ex03:\
+test3	test5	test4	test2	test0	test6	test1\
+\
+./ex03/test2:\
+\
+./ex03/test0:\
+\
+./ex02:\
+testDay00.tar\
+\
+./ex01:\
+z\
+e1z1r4p10% ls -c\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% ls -c * R\
+ls: R: No such file or directory\
+ex01:\
+z\
+\
+ex02:\
+testDay00.tar\
+\
+ex03:\
+test0	test1	test2	test3	test4	test5	test6\
+\
+ex04:\
+klist.txt\
+\
+ex05:\
+midLS\
+\
+ex06:\
+\
+ex07:\
+\
+ex08:\
+\
+ex09:\
+\
+ex10:\
+e1z1r4p10% ls -l\
+total 80\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 15:06 ex01\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 16:08 ex02\
+drwxr-xr-x  4 eshilov  2019_october  4096 Jan  6 17:04 ex03\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 17:32 ex04\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:35 ex05\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex06\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex07\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex08\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex09\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex10\
+e1z1r4p10% ls -lm\
+ex01, ex02, ex03, ex04, ex05, ex06, ex07, ex08, ex09, ex10\
+e1z1r4p10% ls -l -m\
+ex01, ex02, ex03, ex04, ex05, ex06, ex07, ex08, ex09, ex10\
+e1z1r4p10% ls -m -l\
+total 80\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 15:06 ex01\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 16:08 ex02\
+drwxr-xr-x  4 eshilov  2019_october  4096 Jan  6 17:04 ex03\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 17:32 ex04\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:35 ex05\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex06\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex07\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex08\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex09\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex10\
+e1z1r4p10% man ls\
+e1z1r4p10% ls -1\
+ex01\
+ex02\
+ex03\
+ex04\
+ex05\
+ex06\
+ex07\
+ex08\
+ex09\
+ex10\
+e1z1r4p10% ls A\
+ls: A: No such file or directory\
+e1z1r4p10% ls -A\
+.DS_Store	ex01		ex04		ex07		ex10\
+._.DS_Store	ex02		ex05		ex08\
+.git		ex03		ex06		ex09\
+e1z1r4p10% ls -c\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% ls -d\
+.\
+e1z1r4p10% ls -la | grep '\\.'\
+drwxr-xr-x  13 eshilov  2019_october  4096 Jan  6 18:34 .\
+drwxr-xr-x   5 eshilov  2019_october  4096 Jan  6 18:41 ..\
+-rw-r--r--@  1 eshilov  2019_october  8196 Jan  6 16:44 .DS_Store\
+-rw-r--r--   1 eshilov  2019_october  4096 Jan  6 16:40 ._.DS_Store\
+drwxr-xr-x   6 eshilov  2019_october  4096 Jan  6 15:42 .git\
+e1z1r4p10% ls -la | grep '\\.'\
+drwxr-xr-x  13 eshilov  2019_october  4096 Jan  6 18:34 .\
+drwxr-xr-x   5 eshilov  2019_october  4096 Jan  6 18:41 ..\
+-rw-r--r--@  1 eshilov  2019_october  8196 Jan  6 16:44 .DS_Store\
+-rw-r--r--   1 eshilov  2019_october  4096 Jan  6 16:40 ._.DS_Store\
+drwxr-xr-x   6 eshilov  2019_october  4096 Jan  6 15:42 .git\
+e1z1r4p10% ls -t\
+ex05	ex08	ex09	ex10	ex06	ex07	ex04	ex03	ex02	ex01\
+e1z1r4p10% ls -F\
+ex01/	ex02/	ex03/	ex04/	ex05/	ex06/	ex07/	ex08/	ex09/	ex10/\
+e1z1r4p10% ls -aRt\
+..		ex08		ex06		ex03		ex02\
+ex05		ex09		ex07		.DS_Store	.git\
+.		ex10		ex04		._.DS_Store	ex01\
+\
+./ex05:\
+.	midLS	..\
+\
+./ex08:\
+.	..\
+\
+./ex09:\
+.	..\
+\
+./ex10:\
+.	..\
+\
+./ex06:\
+..	.\
+\
+./ex07:\
+..	.\
+\
+./ex04:\
+..		.		klist.txt\
+\
+./ex03:\
+test3	test5	test4	test2	test0	test6	test1	..	.\
+\
+./ex03/test2:\
+.	..\
+\
+./ex03/test0:\
+.	..\
+\
+./ex02:\
+..		.		testDay00.tar\
+\
+./.git:\
+..		config		HEAD		info		description\
+.		objects		refs		hooks\
+\
+./.git/objects:\
+..	.	info	pack\
+\
+./.git/objects/info:\
+.	..\
+\
+./.git/objects/pack:\
+..	.\
+\
+./.git/refs:\
+..	.	heads	tags\
+\
+./.git/refs/heads:\
+.	..\
+\
+./.git/refs/tags:\
+.	..\
+\
+./.git/info:\
+..	.	exclude\
+\
+./.git/hooks:\
+..				pre-commit.sample\
+.				pre-push.sample\
+prepare-commit-msg.sample	post-update.sample\
+update.sample			pre-applypatch.sample\
+pre-rebase.sample		commit-msg.sample\
+pre-receive.sample		applypatch-msg.sample\
+\
+./ex01:\
+..	.	z\
+e1z1r4p10% ls -aF \
+./		._.DS_Store	ex02/		ex05/		ex08/\
+../		.git/		ex03/		ex06/		ex09/\
+.DS_Store	ex01/		ex04/		ex07/		ex10/\
+e1z1r4p10% ls -mF\
+ex01/, ex02/, ex03/, ex04/, ex05/, ex06/, ex07/, ex08/, ex09/, ex10/\
+e1z1r4p10% ls -l\
+total 80\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 15:06 ex01\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 16:08 ex02\
+drwxr-xr-x  4 eshilov  2019_october  4096 Jan  6 17:04 ex03\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 17:32 ex04\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:35 ex05\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex06\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex07\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex08\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex09\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex10\
+e1z1r4p10% ls -t\
+ex05	ex08	ex09	ex10	ex06	ex07	ex04	ex03	ex02	ex01\
+e1z1r4p10% ls -lmF\
+ex01/, ex02/, ex03/, ex04/, ex05/, ex06/, ex07/, ex08/, ex09/, ex10/\
+e1z1r4p10% ls -Fml\
+total 80\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 15:06 ex01/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 16:08 ex02/\
+drwxr-xr-x  4 eshilov  2019_october  4096 Jan  6 17:04 ex03/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 17:32 ex04/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:35 ex05/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex06/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex07/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex08/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex09/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex10/\
+e1z1r4p10% ls -mlF\
+total 80\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 15:06 ex01/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 16:08 ex02/\
+drwxr-xr-x  4 eshilov  2019_october  4096 Jan  6 17:04 ex03/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 17:32 ex04/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:35 ex05/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex06/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex07/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex08/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex09/\
+drwxr-xr-x  2 eshilov  2019_october  4096 Jan  6 18:34 ex10/\
+e1z1r4p10% ls - lmF\
+ls: -: No such file or directory\
+ls: lmF: No such file or directory\
+e1z1r4p10% ls -lmF\
+ex01/, ex02/, ex03/, ex04/, ex05/, ex06/, ex07/, ex08/, ex09/, ex10/\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/eshilov/day00\
+e1z1r4p10% cd day00\
+cd: no such file or directory: day00\
+e1z1r4p10% dc day00\
+Could not open file day00: No such file or directory\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% cd ex01\
+e1z1r4p10% ls\
+z\
+e1z1r4p10% cd ..\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% cd ex05\
+e1z1r4p10% ls\
+midLS\
+e1z1r4p10% vim midLS\
+e1z1r4p10% ls\
+midLS\
+e1z1r4p10% cd ..\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% cd ex06\
+e1z1r4p10% ls\
+e1z1r4p10% cd ..\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% cd ..\
+e1z1r4p10% ls\
+day00			files.txt\
+files-recursive.txt	policy\
+e1z1r4p10% ls\
+day00			files-recursive.txt	policy\
+day00.zip		files.txt\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/eshilov\
+e1z1r4p10% ls\
+day00			files-recursive.txt	policy\
+day00.zip		files.txt\
+e1z1r4p10% cd day00\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% git remote \
+origin\
+e1z1r4p10% git remote \
+origin\
+e1z1r4p10% get remote -v\
+zsh: command not found: get\
+e1z1r4p10% git remote -v\
+origin	vogsphere@vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov (fetch)\
+origin	vogsphere@vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov (push)\
+e1z1r4p10% ls         \
+ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09	ex10\
+e1z1r4p10% git add .\
+e1z1r4p10% git commit -m "from ex1 to ex5" \
+[master (root-commit) 9bd3f13] from ex1 to ex5\
+ Committer: Evgeny Shilov <eshilov@e1z1r4p10.42.us.org>\
+Your name and email address were configured automatically based\
+on your username and hostname. Please check that they are accurate.\
+You can suppress this message by setting them explicitly. Run the\
+following command and follow the instructions in your editor to edit\
+your configuration file:\
+\
+    git config --global --edit\
+\
+After doing this, you may fix the identity used for this commit with:\
+\
+    git commit --amend --reset-author\
+\
+ 11 files changed, 10 insertions(+)\
+ create mode 100644 .DS_Store\
+ create mode 100644 ._.DS_Store\
+ create mode 100644 ex01/z\
+ create mode 100644 ex02/testDay00.tar\
+ create mode 100755 ex03/test1\
+ create mode 100644 ex03/test3\
+ create mode 100644 ex03/test4\
+ create mode 100644 ex03/test5\
+ create mode 120000 ex03/test6\
+ create mode 100644 ex04/klist.txt\
+ create mode 100644 ex05/midLS\
+e1z1r4p10% git push git\
+vogsphere: (INFO) Transaction ID : 360db056-2e13-4911-b126-7287f118b5b1\
+vogsphere: (INFO) Please mention this ID in any ticket you create concerning this transaction\
+vogsphere: (INFO) This transaction has been started at 2020-01-06 19:19:50, server time.\
+vogsphere: (INFO) Rights will be determined using this time, so do NOT cut the connection.\
+vogsphere: (INFO) It appears you are eshilov. If that's not true, check your Kerberos tickets (klist)\
+vogsphere: (INFO) You have read and write rights on this repository\
+Counting objects: 17, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (7/7), done.\
+Writing objects: 100% (17/17), 2.24 KiB | 381.00 KiB/s, done.\
+Total 17 (delta 0), reused 0 (delta 0)\
+To vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov\
+ * [new branch]      master -> master\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/eshilov/day00\
+e1z1r4p10% cd\
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov\
+e1z1r4p10% ls       \
+Desktop		Downloads	dead.letter	goinfre\
+Documents	Library		eshilov\
+e1z1r4p10% cd goinfre \
+e1z1r4p10% pwd\
+/nfs/2019/e/eshilov/goinfre\
+e1z1r4p10% git clone vogsphere@vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov\
+Cloning into 'eshilov'...\
+vogsphere: (INFO) Transaction ID : 65cbf48f-e108-454f-9928-4ed267ce9798\
+vogsphere: (INFO) Please mention this ID in any ticket you create concerning this transaction\
+vogsphere: (INFO) This transaction has been started at 2020-01-06 19:20:38, server time.\
+vogsphere: (INFO) Rights will be determined using this time, so do NOT cut the connection.\
+vogsphere: (INFO) It appears you are eshilov. If that's not true, check your Kerberos tickets (klist)\
+vogsphere: (INFO) You have read and write rights on this repository\
+remote: Counting objects: 17, done.\
+remote: Total 17 (delta 0), reused 0 (delta 0)\
+Receiving objects: 100% (17/17), 14.21 KiB | 1.78 MiB/s, done.\
+e1z1r4p10% ls\
+eshilov\
+e1z1r4p10% mv eshilov day00\
+e1z1r4p10% ls\
+day00\
+e1z1r4p10% dc day00\
+e1z1r4p10% ls\
+day00\
+e1z1r4p10% cd day00\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05\
+e1z1r4p10% git remote -v\
+origin	vogsphere@vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov (fetch)\
+origin	vogsphere@vgs.42.us.org:intra/2020/activities/piscine_c_day_00/eshilov (push)\
+e1z1r4p10% ls\
+ex01	ex02	ex03	ex04	ex05\
+e1z1r4p10% cd ex03\
+e1z1r4p10% ls\
+test1	test3	test4	test5	test6\
+e1z1r4p10% touch -mt 202006012220 test6\
+e1z1r4p10% ls -l\
+total 40\
+-rw-r--r--  1 eshilov  2019_october  0 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october  4 Jan  6 19:20 test1\
+-rw-r--r--  1 eshilov  2019_october  1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october  2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october  1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october  5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% ls\
+test0	test1	test3	test4	test5	test6\
+e1z1r4p10% ls -l\
+total 40\
+-rw-r--r--  1 eshilov  2019_october  0 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october  4 Jan  6 19:20 test1\
+-rw-r--r--  1 eshilov  2019_october  1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october  2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october  1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october  5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% ls -l\
+total 40\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+dr-x---r--  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% touch -mt 202006012047 test0\
+e1z1r4p10% touch -mt 202006012245 test2\
+e1z1r4p10% ls -l\
+total 40\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+dr-x---r--  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% touch -hmt 202006012047 test0\
+e1z1r4p10% ls -l\
+total 40\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+dr-x---r--  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% ls\
+test1	test2	test3	test4	test5	test6\
+e1z1r4p10% rm test2\
+rm: test2: is a directory\
+e1z1r4p10% ls -l\
+total 40\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+dr-x---r--  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% rm test2\
+rm: test2: is a directory\
+e1z1r4p10% chmod 755 test2 \
+e1z1r4p10% rm test2\
+rm: test2: is a directory\
+e1z1r4p10% ls -l\
+total 40\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% chmod 666 test2\
+e1z1r4p10% ls -l\
+total 40\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+drw-rw-rw-  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% rm test2\
+rm: test2: is a directory\
+e1z1r4p10% rmdif test2\
+zsh: command not found: rmdif\
+e1z1r4p10% ls -l\
+total 40\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+drw-rw-rw-  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% mkdir test0\
+e1z1r4p10% mkdir test2\
+e1z1r4p10% touch -mt 202006012047 test0\
+e1z1r4p10% touch -mt 202006012245 test2\
+e1z1r4p10% ls -l\
+total 40\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% ls -l\
+total 40\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% touch -mt 202006012342 test0\
+e1z1r4p10% ls -l\
+total 40\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% touch -mt 202006012020 test0\
+e1z1r4p10% ls -l\
+total 40\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% chmod 504 test2\
+e1z1r4p10% ls -l\
+total 40\
+drwxr-xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+dr-x---r--  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% chmod 715 test0\
+e1z1r4p10% ls -l\
+total 40\
+drwx--xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+dr-x---r--  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% rm test5\
+e1z1r4p10% ls -l\
+total 32\
+drwx--xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+dr-x---r--  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  1 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% ln test3 test5\
+e1z1r4p10% ls\
+test0	test1	test2	test3	test4	test5	test6\
+e1z1r4p10% ls -l\
+total 40\
+drwx--xr-x  2 eshilov  2019_october  68 Jun  1  2020 test0\
+-rwxr-xr-x  1 eshilov  2019_october   4 Jan  6 19:20 test1\
+dr-x---r--  2 eshilov  2019_october  68 Jun  1  2020 test2\
+-rw-r--r--  2 eshilov  2019_october   1 Jan  6 19:20 test3\
+-rw-r--r--  1 eshilov  2019_october   2 Jan  6 19:20 test4\
+-rw-r--r--  2 eshilov  2019_october   1 Jan  6 19:20 test5\
+lrwxr-xr-x  1 eshilov  2019_october   5 Jan  6 19:20 test6 -> test0\
+e1z1r4p10% \
+}
